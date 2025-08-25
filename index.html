@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Napalgo - Next-Gen Innovation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Side Front.png">
+
+  <style>
+    /* Prevent dragging & copying images */
+    img {
+      pointer-events: none;
+      -webkit-user-drag: none;
+      user-drag: none;
+    }
+    .protected {
+      position: relative;
+      display: inline-block;
+    }
+    .protected::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
+      background: transparent;
+    }
+  </style>
+</head>
+  <body oncontextmenu="return false">
+    <header>
+    <div class="logo img">
+      <div class="protected">
+        <img src="Side Front.png" alt="NAPALGO Logo" class="logo img">
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="logo-row">
+  <img src="banner.jpg" alt="Napalgo" class="lo">
+
+  <!-- Overlay content -->
+  <div class="hero-overlay" id="hero">
+    <h1>Next-Gen Innovation, Powered by Passion.</h1>
+    <p>
+      Napalgo is a student-driven IT initiative, transforming ideas into impactful projects and real-world solutions.
+    </p>
+    <button
+      onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+      class="hero-connect-btn">
+      Let's Connect
+    </button>
+  </div>
+</div>
+
+  <!-- Features Section -->
+  <!-- Services Section -->
+<section class="section" id="services">
+  <h2 class="section-title">Services We Provide</h2>
+  <ul style="max-width:600px;margin:2rem auto 0 auto;font-size:1.1rem;list-style:none;padding:0;">
+    
+    <li style="margin-bottom:1.2rem;display:flex;align-items:center;">
+      <span style="font-size:1.5rem;margin-right:0.7rem;">🎨</span>
+      Customised Logo Design: Unique and creative brand identities tailored for you.
+    </li>
+    
+    <li style="margin-bottom:1.2rem;display:flex;align-items:center;">
+      <span style="font-size:1.5rem;margin-right:0.7rem;">💻</span>
+      Static Websites: Clean, modern, and fast-loading websites for your business or portfolio.
+    </li>
+    
+    <li style="margin-bottom:1.2rem;display:flex;align-items:center;">
+      <span style="font-size:1.5rem;margin-right:0.7rem;">🛠️</span>
+      Workshops: Hands-on training sessions to build practical technical skills.
+    </li>
+    
+    <li style="margin-bottom:1.2rem;display:flex;align-items:center;">
+      <span style="font-size:1.5rem;margin-right:0.7rem;">🎤</span>
+      Education E-Summits: Interactive events where students share ideas & experiences.
+    </li>
+    
+    <li style="display:flex;align-items:center;">
+      <span style="font-size:1.5rem;margin-right:0.7rem;">🚀</span>
+      And More: Expanding services to empower students, startups, and businesses.
+    </li>
+  
+  </ul>
+</section>
+
+
+  <!-- About Us Section -->
+  <section class="section" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p style="max-width:700px;margin:0 auto 2rem auto;text-align:center;">
+      Napalgo was founded by passionate students to bridge the gap between academic learning and real-world IT innovation. Our vision is to empower the next generation of tech leaders by providing a platform for collaborative growth, creativity, and impact.
+    </p>
+    <h3 style="text-align:center;margin-bottom:1.5rem;">Our Team</h3>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="member-photo">
+  <img src="cyril.jpg" alt="Cyril Christopher J">
+</div>
+
+
+        <div class="member-name">Cyril Christopher J</div>
+        <div class="member-role">Founder & CEO</div>
+        <div class="social-bar">
+      <a href="https://www.linkedin.com/in/cyrilchristopherj28?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+        <!-- LinkedIn SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/chris_the_smart_?utm_source=qr&igsh=MWpoc3RoMDc2dXhzaA==" target="_blank" aria-label="Instagram">
+        <!-- Instagram SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.385 3.678 1.366 2.697 2.347 2.443 3.459 2.384 4.74.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.059 1.281.313 2.393 1.294 3.374.981.981 2.093 1.235 3.374 1.294C8.332 23.987 8.741 24 12 24c3.259 0 3.668-.013 4.948-.072 1.281-.059 2.393-.313 3.374-1.294.981-.981 1.235-2.093 1.294-3.374.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.059-1.281-.313-2.393-1.294-3.374-.981-.981-2.093-1.235-3.374-1.294C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+      </div>
+      <div class="team-card">
+        <div class="member-photo">
+  <img src="darsh.jpg" alt="Darshni T">
+</div>
+
+
+        <div class="member-name">Darshni T</div>
+        <div class="member-role">Co-Founder</div>
+        <div class="social-bar">
+      <a href="https://www.linkedin.com/in/darshni-raj-792879338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+        <!-- LinkedIn SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/darshnii_raj?igsh=ZGJiczdldWtldnR5" target="_blank" aria-label="Instagram">
+        <!-- Instagram SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.385 3.678 1.366 2.697 2.347 2.443 3.459 2.384 4.74.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.059 1.281.313 2.393 1.294 3.374.981.981 2.093 1.235 3.374 1.294C8.332 23.987 8.741 24 12 24c3.259 0 3.668-.013 4.948-.072 1.281-.059 2.393-.313 3.374-1.294.981-.981 1.235-2.093 1.294-3.374.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.059-1.281-.313-2.393-1.294-3.374-.981-.981-2.093-1.235-3.374-1.294C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+      </div>
+      <div class="team-card">
+        <div class="member-photo">
+  <img src="ashok.jpg" alt="Ashok A">
+
+</div>
+
+        <div class="member-name">Ashok A</div>
+        <div class="member-role">CTO & Creative Director</div>
+        <div class="social-bar">
+      <a href="https://www.linkedin.com/in/ashok-ashok-36189932a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+        <!-- LinkedIn SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/__ashu__similar__18?igsh=Mnlxc2E1aDI4cmFy" target="_blank" aria-label="Instagram">
+        <!-- Instagram SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.385 3.678 1.366 2.697 2.347 2.443 3.459 2.384 4.74.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.059 1.281.313 2.393 1.294 3.374.981.981 2.093 1.235 3.374 1.294C8.332 23.987 8.741 24 12 24c3.259 0 3.668-.013 4.948-.072 1.281-.059 2.393-.313 3.374-1.294.981-.981 1.235-2.093 1.294-3.374.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.059-1.281-.313-2.393-1.294-3.374-.981-.981-2.093-1.235-3.374-1.294C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+      </div>
+      <div class="team-card">
+        <div class="member-photo">
+  <img src="anis.jpg" alt="Anis sankar V">
+</div>
+
+        <div class="member-name">Anis Sankar V</div>
+        <div class="member-role">Stratagy Advisor</div>
+        <div class="social-bar">
+      <a href="https://www.linkedin.com/in/anissankar-v?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+        <!-- LinkedIn SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/pearlcity_boy?igsh=NW5zbWJ2M2F1OWo2" target="_blank" aria-label="Instagram">
+        <!-- Instagram SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.385 3.678 1.366 2.697 2.347 2.443 3.459 2.384 4.74.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.059 1.281.313 2.393 1.294 3.374.981.981 2.093 1.235 3.374 1.294C8.332 23.987 8.741 24 12 24c3.259 0 3.668-.013 4.948-.072 1.281-.059 2.393-.313 3.374-1.294.981-.981 1.235-2.093 1.294-3.374.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.059-1.281-.313-2.393-1.294-3.374-.981-.981-2.093-1.235-3.374-1.294C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals Section -->
+  <section class="section" id="goals">
+    <h2 class="section-title">Our Goals</h2>
+    <div class="goals-list">
+      <div class="goal-card">
+        <h3>Short Term</h3>
+        <ul>
+          <li>Build a strong, collaborative student team</li>
+          <li>Launch impactful IT projects and workshops</li>
+          <li>Establish partnerships with industry mentors</li>
+        </ul>
+      </div>
+      <div class="goal-card">
+        <h3>Long Term</h3>
+        <ul>
+          <li>Expand Napalgo’s reach to more campuses</li>
+          <li>Develop products that solve real-world problems</li>
+          <li>Inspire and nurture future tech leaders</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section class="section" id="contact">
+  <h2 class="section-title">Get in Touch. Let's Innovate Together</h2>
+  <form id="contact-form" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="title" placeholder="Subject" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="social-bar">
+      <a href="https://www.linkedin.com/in/napalgo-team-4b546a380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+        <!-- LinkedIn SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/napalgo.team?utm_source=qr&igsh=ZjBiZGR3dmVjdHB6" target="_blank" aria-label="Instagram">
+        <!-- Instagram SVG -->
+        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.385 3.678 1.366 2.697 2.347 2.443 3.459 2.384 4.74.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.059 1.281.313 2.393 1.294 3.374.981.981 2.093 1.235 3.374 1.294C8.332 23.987 8.741 24 12 24c3.259 0 3.668-.013 4.948-.072 1.281-.059 2.393-.313 3.374-1.294.981-.981 1.235-2.093 1.294-3.374.059-1.28.072-1.689.072-4.948 0-3.259-.013-3.668-.072-4.948-.059-1.281-.313-2.393-1.294-3.374-.981-.981-2.093-1.235-3.374-1.294C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("waCKujim0NKm4ktNC"); // from EmailJS dashboard
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    emailjs.sendForm("service_f7xvfsw", "template_f6a5njd", this)
+      .then(function() {
+        alert("Message Sent Successfully ✅");
+      }, function(error) {
+        alert("Try again later❌: " + JSON.stringify(error));
+      });
+  });
+</script>
+
+
+  <!-- Scroll to Top/Bottom Buttons -->
+  <div class="scroll-btns">
+    <button class="scroll-btn" title="Go to Top">&#8679;</button>
+    <button class="scroll-btn" title="Go to Bottom">&#8681;</button>
+    <button id="theme-toggle" title="Toggle dark/light mode" aria-label="Toggle dark/light mode">&#9788;</button>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="section" style="background:none;box-shadow:none;border:none;padding:2rem 2rem 1rem 2rem;">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;max-width:1000px;margin:auto;">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <img src="Napalgo_Logo_final_white-removebg-preview.png" alt="NAPALGO Logo" style="height:100px;width:auto;">
+        <span style="font-size:1.3rem;font-weight:700;">Napalgo</span>
+      </div>
+      <div style="font-size:1.1rem;font-style:italic;color:var(--accent-solid);margin:0.5rem 0;">
+        Innovative without Boundaries
+      </div>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="#hero" style="color:var(--link);text-decoration:none;">Home</a>
+        <a href="#services" style="color:var(--link);text-decoration:none;">Services</a>
+        <a href="#about" style="color:var(--link);text-decoration:none;">About</a>
+        <a href="#goals" style="color:var(--link);text-decoration:none;">Goals</a>
+        <a href="#contact" style="color:var(--link);text-decoration:none;">Contact</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:1.5rem;font-size:0.95rem;color:var(--primary-text);opacity:0.7;">
+      &copy; 2025 Napalgo. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <!-- Disable right-click on images only -->
+  <script>
+    document.addEventListener("contextmenu", function(e) {
+      if (e.target.tagName === "IMG") {
+        e.preventDefault();
+        alert("Saving images is disabled on this site.");
+      }
+    });
+  </script>
+</body>
+</html>
+
