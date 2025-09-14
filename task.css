@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf3;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #d97706;
+  font-size: 2.2rem;
+}
+
+#task-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Whole Card */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- FLIP TOP ---------- */
+.card-top {
+  position: relative;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-top:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.card-front {
+  background: #fff;
+}
+
+.card-back {
+  background: #fff7e6;
+  transform: rotateY(180deg);
+}
+
+/* ---------- FIXED BOTTOM ---------- */
+.card-bottom {
+  padding: 12px 16px;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.deadline {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.countdown {
+  font-weight: bold;
+  color: #d97706;
+  margin: 4px 0;
+}
+
+/* Buttons inside card */
+.button {
+  display: inline-block;
+  margin: 6px 6px 0 0;
+  padding: 8px 12px;
+  background: #d97706;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+.button:hover {
+  background: #b45309;
+}
+.disabled-btn {
+  display: inline-block;
+  margin: 6px 6px 0 0;
+  padding: 8px 12px;
+  background: #ccc;
+  color: #666;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* ---------- CONTROLS ---------- */
+.controls {
+  position: fixed;
+  bottom: 20px;
+  left: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.controls button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #d97706;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.controls button:hover {
+  background: #b45309;
+}
+
+/* ---------- DARK THEME ---------- */
+body.dark-mode {
+  background: #111;
+  color: #090101;
+}
+
+body.dark-mode h1 {
+  color: #ffb84d; /* golden-orange */
+}
+
+body.dark-mode .card {
+  background: #1a1a1a;
+  border: 2px solid #ffb84d;
+  color: #f59402;
+}
+
+body.dark-mode .card-back {
+  background: #222;
+}
+
+body.dark-mode .card-bottom {
+  background: #111;
+  border-top: 1px solid #ffb84d;
+}
+
+body.dark-mode .button {
+  background: #ffb84d;
+  color: #111;
+}
+body.dark-mode .button:hover {
+  background: #e69500;
+}
