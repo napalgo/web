@@ -619,7 +619,6 @@ header {
   display: none;
 }
 
-/* 📱 Mobile view */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -627,9 +626,11 @@ header {
     top: 60px;
     right: 0;
     width: 200px;
-    background: #111;
+    background: var(--primary-bg);   /* ✅ uses theme */
+    color: var(--primary-text);
     padding: 15px;
     border-radius: 8px;
+    box-shadow: var(--shadow);
   }
 
   .nav-links ul {
@@ -639,9 +640,9 @@ header {
 
   .hamburger {
     display: block;
+    color: var(--link); /* ✅ adapts to theme */
   }
 
-  /* Show menu when active */
   .nav-links.active {
     display: block;
   }
