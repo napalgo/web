@@ -41,7 +41,7 @@ async function loadTasks() {
       front.innerHTML = `
         <h3>${task.name || "Untitled Task"}</h3>
         <p><b>ID:</b> ${task.id || "-"}</p>
-        <p>${task.shortDescription || "Hover for details"}</p>
+        <p>${task.shortDescription || "Click for details"}</p>
       `;
 
       const back = document.createElement("div");
@@ -51,6 +51,11 @@ async function loadTasks() {
       inner.appendChild(front);
       inner.appendChild(back);
       top.appendChild(inner);
+
+      // 🔄 Toggle flip on click
+      top.addEventListener("click", () => {
+        top.classList.toggle("flipped");
+      });
 
       // --------- BOTTOM FIXED ---------
       const bottom = document.createElement("div");
@@ -113,3 +118,30 @@ document.getElementById("scroll-up").addEventListener("click", () => {
 document.getElementById("scroll-down").addEventListener("click", () => {
   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 });
+function jumpMonkey() {
+  const monkey = document.getElementById("monkey");
+  const cards = document.querySelectorAll(".card");
+
+  if (!monkey || cards.length === 0) return;
+
+  // Pick a random card
+  const randomCard = cards[Math.floor(Math.random() * cards.length)];
+  const rect = randomCard.getBoundingClientRect();
+
+  // Calculate landing spot (top of card)
+  const landingX = rect.left + rect.width / 2 - monkey.offsetWidth / 2;
+  const landingY = rect.top - monkey.offsetHeight;
+
+  // Animate jump with arc
+  gsap.to(monkey, {
+    duration: 2,
+    x: landingX,
+    y: landingY,
+    ease: "power1.inOut",
+    onComplete: () => {
+      // small bounce effect
+      gsap.to(monkey, { y: landingY - 20, duration: 0.3, yoyo: true, repeat: 1 });
+    }
+  });
+}
+
