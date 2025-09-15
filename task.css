@@ -46,7 +46,7 @@ h1 {
   transform-style: preserve-3d;
 }
 
-.card-top:hover .card-inner {
+.card-top.flipped .card-inner {
   transform: rotateY(180deg);
 }
 
@@ -169,4 +169,31 @@ body.dark-mode .button {
 }
 body.dark-mode .button:hover {
   background: #e69500;
+}
+.scroll-bar {
+  width: 100%;
+  overflow: hidden;
+  background: #d97706; /* orange bar */
+  color: white;
+  padding: 8px 0;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: bold;
+}
+
+.scroll-bar p {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 19s linear infinite;
+  font-size: 16px;
+  padding-left: 100%;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
