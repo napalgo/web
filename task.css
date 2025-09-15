@@ -197,3 +197,87 @@ body.dark-mode .button:hover {
     transform: translateX(-100%);
   }
 }
+/* 📱 Mobile Responsive Fix */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  #task-container {
+    grid-template-columns: 1fr; /* one card per row */
+    gap: 15px;
+  }
+
+  .card {
+    border-radius: 10px;
+  }
+
+  .card-top {
+    height: 120px; /* reduce height */
+  }
+
+  .card-front, .card-back {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .card-bottom {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .button, .disabled-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .controls {
+    left: auto;
+    right: 10px;
+    bottom: 10px;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .controls button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .scroll-bar {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+
+  .scroll-bar p {
+    font-size: 14px;
+  }
+}
+
+/* 📱 Very Small Screens (like 400px and below) */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .card-top {
+    height: 100px;
+  }
+
+  .card-front, .card-back {
+    font-size: 13px;
+  }
+
+  .button, .disabled-btn {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
