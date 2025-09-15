@@ -204,36 +204,36 @@ body.dark-mode .button:hover {
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 5vw, 2rem);
     margin-bottom: 15px;
   }
 
   #task-container {
     grid-template-columns: 1fr; /* one card per row */
-    gap: 15px;
+    gap: 18px;
   }
 
   .card {
-    border-radius: 10px;
+    border-radius: 12px;
+    font-size: clamp(0.95rem, 2.8vw, 1.1rem);
   }
 
   .card-top {
-    height: 120px; /* reduce height */
+    height: clamp(140px, 30vw, 200px);
   }
 
   .card-front, .card-back {
-    padding: 12px;
-    font-size: 14px;
+    padding: clamp(12px, 3vw, 18px);
   }
 
   .card-bottom {
-    padding: 10px 12px;
-    font-size: 14px;
+    padding: clamp(10px, 3vw, 16px);
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
   }
 
   .button, .disabled-btn {
-    padding: 6px 10px;
-    font-size: 13px;
+    padding: clamp(8px, 2.5vw, 12px) clamp(12px, 3vw, 16px);
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
   }
 
   .controls {
@@ -241,43 +241,23 @@ body.dark-mode .button:hover {
     right: 10px;
     bottom: 10px;
     flex-direction: row;
-    gap: 8px;
+    gap: 10px;
   }
 
   .controls button {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
+    width: clamp(40px, 10vw, 50px);
+    height: clamp(40px, 10vw, 50px);
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
     padding: 0;
     border-radius: 50%;
   }
 
   .scroll-bar {
-    font-size: 14px;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
     padding: 6px 0;
   }
 
   .scroll-bar p {
-    font-size: 14px;
-  }
-}
-
-/* 📱 Very Small Screens (like 400px and below) */
-@media (max-width: 400px) {
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  .card-top {
-    height: 100px;
-  }
-
-  .card-front, .card-back {
-    font-size: 13px;
-  }
-
-  .button, .disabled-btn {
-    font-size: 12px;
-    padding: 5px 8px;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
   }
 }
