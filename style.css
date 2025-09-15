@@ -590,3 +590,59 @@ body.light .team-card:hover {
 .hero-overlay button:hover {
   box-shadow: 0 6px 20px rgba(252,172,0,0.6) !important;
 }
+/* Default nav style */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hamburger icon (hidden on desktop) */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background: #111;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Show menu when active */
+  .nav-links.active {
+    display: block;
+  }
+}
